@@ -24,15 +24,18 @@
 
 💡 Usa las siguientes credenciales para probar el sistema:
 
-- 🔹Acceso a proyecto Dashboard
+🔹Acceso a proyecto Dashboard:
+
 - **Usuario:** `dashboard`
 - **Contraseña:** `dash001`
 
-- 🔹Acceso a proyecto ToDo List
+🔹Acceso a proyecto ToDo List:
+
 - **Usuario:** `todo`
 - **Contraseña:** `todo001`
 
-- 🔹Acceso a proyecto Markdown Live Editor
+🔹Acceso a proyecto Markdown Live Editor:
+
 - **Usuario:** `markdown`
 - **Contraseña:** `mkd001`
 

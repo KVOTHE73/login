@@ -157,7 +157,10 @@ describe("Login.vue", () => {
     customRender();
 
     await fireEvent.update(screen.getByPlaceholderText("Usuario"), "dashboard");
-    await fireEvent.update(screen.getByPlaceholderText("Contraseña"), "1234");
+    await fireEvent.update(
+      screen.getByPlaceholderText("Contraseña"),
+      "dash001"
+    );
     await fireEvent.click(screen.getByRole("button", { name: "Acceder" }));
 
     await waitFor(() => {
