@@ -27,21 +27,22 @@ jobs:
 
       # 4️⃣ Ejecutar tests
       - name: Run unit tests
-        run: npm run test
+        run: npm run test:unit
 
       # 5️⃣ Compilar proyecto
       - name: Build project
         run: npm run build
 
-      # 5️⃣ Configurar identidad de Git
+      # 6️⃣ Configurar identidad de Git
       - name: Configurar identidad de Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      # 6️⃣ Desplegar a GitHub Pages
+      # 7️⃣ Desplegar a GitHub Pages
       - name: Deploy to GitHub Pages
         if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm install -g gh-pages
-          npx gh-pages -d dist
+          npx gh-pages -d dist -u "github-actions[bot] <github-actions[bot]@users.noreply.github.com>" -r https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
