@@ -71,6 +71,8 @@ src/
 │   └── flags/                  # Banderas de idiomas
 ├── i18n/
 │   └── messages.ts             # Textos de la aplicación en español e inglés para cambio de idioma
+├── stores/
+│   └── themeStore.ts           # Store para cambio de tema oscuro/claro
 ├── test/
 │   └── Login.spec.ts           # Test unitarios de la aplicación
 ├── App.vue                     # Componente raíz
