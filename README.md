@@ -18,7 +18,24 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/KVOTHE73/login)
 ![GitHub license](https://img.shields.io/github/license/KVOTHE73/login)
 
-## 📸 Credenciasles de acceso
+---
+
+## 🔐 Credenciales de acceso
+
+💡 Usa las siguientes credenciales para probar el sistema:
+
+- **Usuario:** `dashboard`
+- **Contraseña:** `dash001`
+
+- **Usuario:** `todo`
+- **Contraseña:** `todo001`
+
+- **Usuario:** `markdown`
+- **Contraseña:** `mkd001`
+
+(Estas credenciales están hardcodeadas solo con fines demostrativos.)
+
+---
 
 ## 📸 Vista previa
 

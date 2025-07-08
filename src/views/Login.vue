@@ -244,9 +244,9 @@ const checkForm = async (): Promise<void> => {
   await new Promise((r) => setTimeout(r, 1000));
 
   const users: Record<string, string> = {
-    dashboard: "1234",
-    markdown: "abcd",
-    todolist: "todo123",
+    dashboard: "dash001",
+    markdown: "mkd001",
+    todolist: "todo001",
   } as const;
 
   const user = username.value.toLowerCase();
