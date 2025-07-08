@@ -18,6 +18,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/KVOTHE73/login)
 ![GitHub license](https://img.shields.io/github/license/KVOTHE73/login)
 
+## 📸 Vista previa
+
 ![Vista del editor](./public/loginPreview.png)
 
 ---
@@ -57,7 +59,7 @@ src/
 - 🌐 Soporte multilenguaje (Español / Inglés)
 - ✅ Validación de todos los inputs del formulario
 - 📦 Modal para restauración de contraseña
-- 🔄 Navegación si el login fur correcto
+- 🔄 Navegación si el login fué correcto
 - 📱 Responsive y optimizado para móviles
 
 ---
@@ -68,6 +70,26 @@ src/
 - `script setup`: Lógica clara, organizada por bloques funcionales
 - `style`: Completamente comentado y contenido en el propio archivo, SASS
 - ✅ No requiere ningún CSS externo adicional
+
+---
+
+## ✅ Cobertura de tests
+
+- 🔹src/test/Login.spec.ts (9 tests) 3312ms
+  ✓ Login.vue > renderiza campos y botón correctamente 122ms
+  ✓ Login.vue > cambia el tema al pulsar el botón de modo oscuro / claro 18ms
+  ✓ Login.vue > cambia el idioma al pulsar el botón de idioma 12ms
+  ✓ Login.vue > valida usuario y contraseña vacíos 26ms
+  ✓ Login.vue > muestra error si el usuario no existe 1030ms
+  ✓ Login.vue > muestra error si la contraseña es incorrecta 1040ms
+  ✓ Login.vue > abre la URL correspondiente si el login es correcto 1039ms
+  ✓ Login.vue > muestra modal de recuperación y validación de email 12ms
+  ✓ Login.vue > acepta email válido y cierra modal tras éxito 12ms
+
+- 🔹 Test Files 1 passed (1)
+- 🔹 Tests 9 passed (9)
+- 🔹 Start at 14:39:50
+- 🧪 Duration 3.89s
 
 ---
 
@@ -85,7 +107,7 @@ npm install
 npm run dev
 ```
 
-📅 Metainformación
+## 📅 Metainformación
 
 📁 Proyecto: Login
 
