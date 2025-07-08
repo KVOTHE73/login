@@ -1,0 +1,48 @@
+name: CI & Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout del código
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2️⃣ Configurar Node.js
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      # 3️⃣ Instalar dependencias
+      - name: Install dependencies
+        run: npm ci
+
+      # 4️⃣ Ejecutar tests
+      - name: Run unit tests
+        run: npm run test:unit
+
+      # 5️⃣ Compilar proyecto
+      - name: Build project
+        run: npm run build
+
+      # 6️⃣ Configurar identidad de Git
+      - name: Configurar identidad de Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      # 7️⃣ Desplegar a GitHub Pages
+      - name: Deploy to GitHub Pages
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx gh-pages -d dist -r https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
