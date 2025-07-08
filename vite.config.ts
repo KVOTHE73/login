@@ -2,7 +2,8 @@ import { defineConfig } from "vitest/config";
 import vue from "@vitejs/plugin-vue";
 import { fileURLToPath, URL } from "node:url";
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  base: command === "build" ? "/login/" : "/",
   plugins: [vue()],
   test: {
     globals: true,
@@ -14,4 +15,4 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-});
+}));

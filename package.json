@@ -3,10 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://kvothe73.github.io/login",
+  "license": "MIT",
+  "author": "Nacho Rodríguez",
+  "description": "A complete access application system.",
+
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist",
+    "test": "vitest run",
     "test:unit": "vitest"
   },
   "dependencies": {
@@ -26,8 +33,10 @@
     "@types/node": "^24.0.10",
     "@types/testing-library__jest-dom": "^5.14.9",
     "@vitejs/plugin-vue": "^6.0.0",
+    "@vitejs/plugin-vue-jsx": "^5.0.1",
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.7.0",
+    "gh-pages": "^6.3.0",
     "jsdom": "^26.1.0",
     "sass": "^1.89.2",
     "typescript": "~5.8.3",
