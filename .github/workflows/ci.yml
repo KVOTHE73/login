@@ -33,6 +33,12 @@ jobs:
       - name: Build project
         run: npm run build
 
+      # 5️⃣ Configurar identidad de Git
+      - name: Configurar identidad de Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       # 6️⃣ Desplegar a GitHub Pages
       - name: Deploy to GitHub Pages
         if: success()
