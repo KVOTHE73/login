@@ -74,7 +74,7 @@ src/
 ├── stores/
 │   └── themeStore.ts           # Store para cambio de tema oscuro/claro
 ├── test/
-│   └── Login.spec.ts           # Test unitarios de la aplicación
+│   └── Login.spec.ts           # Tests unitarios de la aplicación
 ├── App.vue                     # Componente raíz
 ├── main.ts                     # Punto de entrada
 └── ...
