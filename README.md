@@ -18,6 +18,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/KVOTHE73/login)
 ![GitHub license](https://img.shields.io/github/license/KVOTHE73/login)
 
+## 📸 Credenciasles de acceso
+
 ## 📸 Vista previa
 
 ![Vista del editor](./public/loginPreview.png)
