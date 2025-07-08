@@ -184,8 +184,8 @@ import { ref, computed, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import flagEs from "../assets/flags/es.png";
 import flagEn from "../assets/flags/en.png";
-import { createLogger } from "../composables/useLogger";
 import { useThemeStore } from "../stores/themeStore";
+import { createLogger } from "../composables/useLogger";
 
 // ⛳ Instancias
 const logger = createLogger("@views/Login.vue");

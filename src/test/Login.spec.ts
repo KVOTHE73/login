@@ -118,7 +118,10 @@ describe("Login.vue", () => {
       screen.getByPlaceholderText("Usuario"),
       "inexistente"
     );
-    await fireEvent.update(screen.getByPlaceholderText("Contraseña"), "1234");
+    await fireEvent.update(
+      screen.getByPlaceholderText("Contraseña"),
+      "dash001"
+    );
     await fireEvent.click(screen.getByRole("button", { name: "Acceder" }));
 
     expect(await screen.findByText("Usuario incorrecto")).toBeInTheDocument();
